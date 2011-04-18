@@ -1,0 +1,7 @@
+
+
+# Agile Software Development
+
+[Agile Software Development](http://en.wikipedia.org/wiki/Agile_software_development) is a methodology which favours creating useful software quickly by focussing on close  interaction between the people involved and the acceptance of change.
+
+A large part of my time at work involves thinking about how to do Agile better, in order that I may enable our team of developers to connect better with our customers and with our business.

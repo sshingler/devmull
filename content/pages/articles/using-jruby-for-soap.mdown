@@ -1,0 +1,46 @@
+read more: Read More
+date: 2008-02-28T16:28:00.001Z
+summary: I have been working on a project which uses the Mule ESB, and  a JRubyOnRails app. Part of this means calling SOAP services from within the JRuby app. Ola Bini sets out a couple of approaches in his JRuby on Rails book,but I thought I would blog the success I've had using the mule-client libraries. I am passing "complex" Java objects around in these SOAP services, not just primitives - always more difficult when it comes to SOAP interoperability.
+categories: ruby-and-jruby, agile-software-development
+
+# Calling SOAP Services from JRuby
+
+This blog post has been published as a chapter in the [JRuby Cookbook](http://oreilly.com/catalog/9780596519650) by O'Reilly.
+
+I have been working on a project which uses the [Mule ESB](http://mule.mulesource.org), and  a JRubyOnRails app.
+
+Part of this means calling SOAP services from within the JRuby app.
+
+[Ola Bini](http://olabini.com/blog/) sets out a couple of approaches in his JRuby on Rails book,but I thought I would blog the success I've had using the mule-client libraries.
+
+I am passing "complex" Java objects around in these SOAP services, not just primitives - always more difficult when it comes to SOAP interoperability.
+
+Here is the call:
+	
+	include_class 'org.mule.extras.client.MuleClient' 
+	include_class 'org.mule.impl.MuleMessage'
+	def make_soap_request(soapurl, request) 
+		c = MuleClient.new 
+		begin
+			message = MuleMessage.new(request)   
+			m = c.send(soapurl, message , nil)   
+			return m.getPayload() 
+		rescue Exception => e   
+			logger.error e 
+		end
+	end
+	
+The return value is the object returned by the soap call. Nice and easy.
+
+Here are the required jars: 
+(add to /lib/java)
+
+	activation-1.1.jarasm-2.2.3.jarasm-commons-2.2.3.jaraxis-1.3.jaraxis-jaxrpc-1.3.jaraxis-saaj-1.3.jarbackport-util-concurrent-3.0.jarcommons-beanutils-1.7.0.jarcommons-codec-1.3.jarcommons-collections-3.2.jarcommons-discovery-0.2.jarcommons-httpclient-3.0.1.jarcommons-io-1.2.jarcommons-lang-2.2.jarcommons-logging-1.0.4.jargeronimo-j2ee-connector_1.5_spec-1.0.1.jarjline-0.9.9.jarjug-2.0.0-asl.jarlog4j-1.2.14.jarmule-core-1.3.3.jarmule-module-client-1.3.3.jarmule-transport-axis-1.3.3.jarmule-transport-http-1.3.3.jarmule-transport-soap-1.3.3.jarmule-transport-tcp-1.3.3.jarwsdl4j-1.5.1.jar
+	
+Then you can use:
+	
+	include javaDir["lib/java/*.jar"].each { |jar| require jar }
+	
+...at the top of your class, and make SOAP calls until the cows come home! :)
+
+Hope is helpful!

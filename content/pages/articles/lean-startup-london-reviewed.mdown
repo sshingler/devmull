@@ -1,0 +1,36 @@
+read more: Read More
+date: 2010-10-25T10:24:00.000+01:00
+summary: A couple of weeks ago, I attended a @TechHubFriday event: Eric Ries on The Lean Startup. Eric began with an interesting definition of a startup company: "A startup is a human institution designed to deliver a new product or service under conditions of extreme uncertainty." It has nothing to do with company size or industry sector. Interestingly, this differs from the "two guys in a garage" model, which is probably the mainstream media's impression of a startup.
+categories: agile-software-development
+
+#Lean Startup London reviewed
+
+A couple of weeks ago, I attended a @TechHubFriday event: Eric Ries on The Lean Startup.
+
+Eric is the creator of the Lean Startup methodology and blogs at [Startup Lessons Learned](http://www.startuplessonslearned.com/).
+
+Eric began with an interesting definition of a startup company: "A startup is a human institution designed to deliver a new product or service under conditions of extreme uncertainty." It has nothing to do with company size or industry sector. Interestingly, this differs from the "two guys in a garage" model, which is probably the mainstream media's impression of a startup.
+
+There's a strong tendency in startup culture to eat your own dog food and scratch your own itch, but it is important to not just ask the question "can we build it? (for us)" but "should we build it? (for others)". The goal is to create an institution, not just a product.
+
+The "dog food" paradigm raises its head again when choosing the next feature to work on. It is so easy for someone who's invested a lot of energy and emotion in a project to be in a mindset where their opinions seem like the right idea. This flow is a familar path: I really want it => I really think it is needed => I think it is a fact. Eric spoke of the "reality distortion field" failing to kick in at this point of the planning process. That thing you want may not actually be true - there may not be lots of other people like you who need that thing.
+
+There's a lot of talk amongst VC/startup community about "pivots". It has become a bit of a buzzword. The term comes from basketball - keep one foot planted but change direction with the other. For a young company, the metaphor is the ability to stay grounded in what we've learned but quickly respond to changing conditions.
+
+Pivots are insights into how your business is doing. I think in a way, they're another way of thinking about the output of an iteration. Ries warned that it can be difficult to pivot when you're having modest success, that it is difficult to tell the difference between the value creating activities and the wasteful ones. Another trap which we fall into is that it is easy to spend far too long arguing about whether to do a piece of work, where our options are actually quite simple: Do it and fail, not do it and fail, do it and succeed, not do it and succeed.
+
+Eric gave us some choice quotes about the waterfall process:
+
+* Traditional management practices, such as waterfall, were excellent for basic manufacturing process fail now that we have material abundance. 
+* In waterfall, people are not incentivised to do their best work.
+* The lucky waterfall projects are the ones which come in way over budget and way over time, most fail.
+
+Something I thought was particularly useful about the talk, was Eric's ability to deliver bad news in a balanced way. Here's some of his thinking on why so many startups fail:
+
+A lot of startups find themselves in a position where they're treading water. There may be some turnover, some small profit, they're still consuming resources and employees, and generally everyone thinks it might just pull up. The people working there still believe in it despite the plane losing altitude. We have this idea that pouring more effort into such a business is a good idea, because of the emotion and energy we've already sunk into it.
+
+The founder is often the last person to notice the change - everyone else has already moved on, but the founder is never in a fireable position.
+
+Lack of customer and market knowledge is partly accountable for the current epidemic of failure in the industry. We've got better at using metrics from log files or database queries to inform our decisions, but that's really just compensating for a deficiency that we don't get to know our customers any more.
+
+It was a great talk - there was a lot of content I haven't covered here, but other attendees have blogged about the event [here](http://andysinclair.wordpress.com/2010/10/19/eric-ries-touches-down-at-techhub) and [here](http://theupgroup.wordpress.com/2010/10/18/review-of-techhub-fri-16th-october-a-talk-by-eric-ries-on-the-lean-start-up/).

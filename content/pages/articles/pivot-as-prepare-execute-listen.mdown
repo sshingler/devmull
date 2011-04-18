@@ -1,0 +1,28 @@
+read more: Read More
+date: 21 Nov 2010
+summary: One of the key principles in Lean Startup is the Pivot. It has actually become a bit of a buzzword over the past year. The term comes from basketball - keep one foot planted but change direction with the other. The metaphor for business is that you stay grounded in what you've learned whilst testing something new. For example, you might have been offering a monthly subscription product: you could pivot to offering an annual subscription instead, or as well as the monthly. As I've been reading about Pivots, I realised I had met the pattern before in a quite different context.
+categories: agile-software-development
+
+# The Pivot as Prepare, Execute, Listen
+
+One of the key principles in lean startup is the Pivot. It has become a bit of a buzzword. The term comes from basketball - keep one foot planted but change direction with the other. The metaphor for business is that you stay grounded in what you've learned whilst testing something new. For example, you might have been offering a monthly subscription product: you could pivot to offering an annual subscription instead, or as well as the monthly.
+
+As I've been reading about Pivots, I realised I had met the pattern before in a quite different context.
+
+Before I was involved in tech, I was a musician. I studied Double Bass at the Royal Academy of Music and played professionally for four years after graduating. Between 1996 and 2000 I was lucky enough to play with the Philharmonia Orchestra, London Symphony Orchestra, Royal Philharmonic Orchestra, the BBC Symphony Orchestra and the Halle Orchestra. I was invited to play at the Salzburg Festival and record for [Deutsche Grammophon](http://www.amazon.co.uk/Messiaen-Saint-Fran%C3%A7ois-dAssise-Olivier/dp/B00000JSAO/ref=sr_1_6?ie=UTF8&qid=1290416456&sr=8-6) and [Phillips](http://www.amazon.co.uk/Mahler-Tiffin-School-Boys-Choir/dp/B00018BOL0/ref=sr_1_4?ie=UTF8&qid=1290416480&sr=8-4) at Abbey Road studios, London. 
+
+The principle double bass of the Philharmonia is [Neil Tarlton](http://www.neiltarlton.com/). He taught me about the "Prepare, Execute, Listen" pattern of practise. A musician working on a piece practises by breaking the piece down, phrase by phrase. For each phrase, he'll have a concept of how he wants it to sound: his interpretation of the phrase. 
+
+This form of practising is a loop of:
+ 
+* Preparing by refreshing your concept for the phrase in your mind.
+* Executing it.
+* Testing the results against the imagining you originally had, by listening.
+
+You may find that you wish to evolve your original idea, perhaps because your interpretation has evolved or to work around a technical difficulty. To me, that's incredibly similar to the concept of pivoting.
+
+As another point of interest, there's something I've noticed which is very different about the tech industry to the music profession. Back in 1997, when I was working with Neil, he published a book of double bass bowing exercises based on the famous Czech violinist Ševčík's exercises for the violin which were first published in 1880. A quick dance around Wikipedia shows that [Ševčík](http://en.wikipedia.org/wiki/Otakar_%C5%A0ev%C4%8D%C3%ADk) was taught by [Bennewitz](http://en.wikipedia.org/wiki/Anton%C3%ADn_Bennewitz), who was taught by [Viotti](http://en.wikipedia.org/wiki/Giovanni_Battista_Viotti), who was taught by [Pugnani](http://en.wikipedia.org/wiki/Gaetano_Pugnani), who was taught by [Tartini](http://en.wikipedia.org/wiki/Giuseppe_Tartini).
+
+Tartini (1692-1770) is still well known in classical music circles today, partly for being the first person to play one of Stradivari's violins but mainly for writing fiendishly difficult violin music. The most famous piece he wrote was the Devil's trill, which I notice has [4,919 scrobbles](http://www.last.fm/music/Giuseppe+Tartini/_/Devil's+Trill+Sonata) at the time of writing.
+
+My point is that there's a direct lineage of pedagogy between Tarlton and Tartini which covers almost 300 years. To a musician that's completely normal. A violinist playing the Devil's trill today has the same challenges as in 1750 or 2350. They may even be using the same instrument to play it. In tech, however, this doesn't really exist. Of course I understand why it doesn't exist, and I know that we have Babbage, Lovelace and Turing; more recently Knuth and Stallman (to name a few) as pedagogues of a sort, but the speed of evolution of technology means that we're doing very different things in our work today, than they were. I find that the tech industry is largely populated by young people who can be very sure of themselves: "Hey, we've been doing this for ten years now!" The vibrancy and energy around the startup movement is infectious and engaging, but there's sometimes a tendency towards very black and white views that 'X' is right and 'Y' is wrong. I think we miss much from not having the pedagogy of an older profession and the respect which is inherent in it.

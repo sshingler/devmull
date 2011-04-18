@@ -1,0 +1,53 @@
+read more: Read More
+date: 2010-04-12T11:44:00.000+01:00
+summary: [Rework](http://37signals.com/rework) is largely a rehash of Getting Real, but with the focus moved away from people who write software, onto people involved in all aspects of running a business. The refocussing allows Fried and DHH to reach a far wider audience with their opinions. Their wisdom, gained by experience, of how to deliver software will be read by people who would have never considered reading Getting Real. That's pretty savvy market positioning and something that wouldn't have been achieved by a series of blog posts on their website.
+categories: agile-software-development
+
+#A review of Rework.
+
+[Rework](http://37signals.com/rework) by Jason Fried and David Heinemeier Hansson.
+
+> ISBN-10: 0307463745
+
+> ISBN-13: 978-0307463746
+
+I first read [Getting Real](http://gettingreal.37signals.com) in 2006. 
+At that time, I was working as a software contractor for a large corporate defence contractor. I was bored and frustrated - trying to find ways to introduce Rails projects into the department without anyone from "IT security" noticing.
+Before Getting Real, no-one had addressed the problems faced when delivering software in a corporate culture, and the lack of understanding around this brave new discipline.
+Suddenly, we had a manual for tackling the problem head on.
+
+These days I'm working in a very different environment - in a Rails-focused  software house of around 16 people who have all read Getting Real. 
+We're all so into Getting Real, I'm worried some colleagues will take 37Signals' new book: [Rework](http://37signals.com/rework) like drops of echinacea, to be be regurgitated ad nauseum in meetings over the next few months.
+
+That's if we're actually allowed to have any [meetings](http://gettingreal.37signals.com/ch07_Meetings_Are_Toxic.php).
+
+[Rework](http://37signals.com/rework) is largely a rehash of Getting Real, but with the focus moved away from people who write software, onto people involved in all aspects of running a business.
+The refocussing allows Fried and DHH to reach a far wider audience with their opinions. Their wisdom, gained by experience, of how to deliver software will be read by people who would have never considered reading Getting Real. That's pretty savvy market positioning and something that wouldn't have been achieved by a series of blog posts on their website.
+
+However, having a target reader of a business everyman has the flip side that this reader won't know, or particularly care what impact the Rails Framework has had in software development; or about the godlike status of the authors in the transitory world of Web 2.0.
+
+This means that when the authors go beyond messages on delivering software, and venture into the more subtle and delicate aspects of what makes business work, they quickly expose a naivety - probably the result of having done little in business outside 37Signals. This trait is especially noticeable in the chapters which address more "human" issues. They veer from blindingly obvious common sense:
+
+> A good apology accepts responsibility.
+
+...to the most ridiculous assertions
+> Culture is the by-product of consistent behaviour.
+
+> Policies are organisational scar tissue."
+
+Those are direct quotes, but my personal favourite is this opinion snippet, paraphrased from page 208.
+
+> The only reason you'd go to a dinner party is if you thought you were going to get something out of it.
+
+Sorry, what?
+
+Their writing is naive because it only caters for the easy stuff, where you've got a team of people with great skills and who get on well. Every day in Rework is a sunny day. What about handling some difficult situations? For example: an employee is making strange decisions in the workplace because they've just lost a family member - but they haven't told anyone at work about their loss. An employee is having second thoughts about their career and is becoming disruptive for the team, but hasn't yet the self awareness to talk with the team about it.
+
+I suspect that 37Signals simply hasn't been around long enough to have had to deal with that stuff yet. As they say, they've been around for 10 years - as if they think that's a long time.
+
+There's another aspect to Rework: How lucky have these guys been? Is their success purely down to skill and effort, or did they just hit a remarkable piece of timing with RubyOnRails, and have marketed themselves well off the back of that? I'm reminded of Paul Graham's advice on how to run a startup. All good advice, but really, I would have felt it was more genuine if he'd just acknowledged he was damn lucky to get bought out.
+
+
+All told, I enjoyed the book, and it hardly takes up a huge portion of time to get through it. Parts of it made me uncomfortable because its provocative style made me question my approach to my work, and that's no bad thing.
+
+DHH is [visiting London](http://leanca.mp) next month. I'll be interested to hear his talk.

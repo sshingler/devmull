@@ -1,0 +1,15 @@
+read more: Read More
+date: 2010-04-03T22:30:00.001+01:00
+summary: Nesta CMS has recently introduced theme support, and I had recently spotted the penguin classics theme on tumblr. I thought I'd convert it.
+categories:
+
+# A quick post on a new theme
+
+[Nesta CMS](http://effectif.com/nesta) has recently introduced theme support.
+
+It is showing up on the "themes" branch, but there isn't a write up yet.
+
+I had recently spotted the penguin classics [tumblr theme](http://penguinclassics.tumblr.com) by
+[Max Wheeler](http://makenosound.com) and thought it would be cool to convert it.
+
+Definitely a [WIP](http://github.com/sshingler/nesta-theme-penguinclassics) for me, but so far I'm liking it.

@@ -1,0 +1,35 @@
+read more: Read More
+date: 2009-10-28T10:30:00.001+01:00
+summary: A useful bit of command line foo, for getting useful information out of git log.
+categories:
+
+# Getting useful information out of git log
+
+A couple of weeks ago, this snippet was hitting the software twitterati in a big way
+
+	git log --graph --pretty=format:'%an: %s - %Cred%h%Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+
+It produces a very pretty tree view of the git log, piped into less.
+
+It got me wondering what you could do with git log in terms of viewing the total number of commits by each author working on a repository. A league table of commits, if you will - although that isn't a metric of competition or status in any way. :)
+
+Here's what I came up with:
+
+	git log | grep 'Author:'| sort | uniq -c | sort -nr
+
+Here's the output of that command on the [github rails project](http://github.com/rails/rails/) (abridged)
+
+	3045 Author: David Heinemeier Hansson <david@loudthinking.com>
+	2647 Author: Jeremy Kemper <jeremy@bitsweat.net>
+	 732 Author: Joshua Peek <josh@joshpeek.com>
+	 519 Author: Michael Koziarski <michael@koziarski.com>
+	 425 Author: Rick Olson <technoweenie@gmail.com>
+	 346 Author: Jamis Buck <jamis@37signals.com>
+	 345 Author: Pratik Naik <pratiknaik@gmail.com>
+	 301 Author: Marcel Molina <marcel@vernix.org>
+	 267 Author: José Valim <jose.valim@gmail.com>
+	 231 Author: Nicholas Seckar <nseckar@gmail.com>
+	 181 Author: Emilio Tagua <miloops@gmail.com>
+	 179 Author: Yehuda Katz + Carl Lerche <ykatz+clerche@engineyard.com>
+	 178 Author: Yehuda Katz <wycats@gmail.com>
+	

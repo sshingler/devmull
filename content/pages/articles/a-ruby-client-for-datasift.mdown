@@ -1,0 +1,73 @@
+read more: Read More about Rsift
+date: 01 Jan 2011
+summary: [DataSift](http://datasift.net) is a "real time social media filtering engine". They have recently published an  [API](http://support.datasift.net/help/kb/rest-api/api-documentation) which allows developers to create and manage "streams". The domain of social media curation is very hot right now, so I was very interested to receive a alpha API key to try it out. I work mainly with Ruby, and there wasn't a client out there yet to "wrap" the Datasift API in Ruby, so I thought that writing that gem would be my first step.
+categories: agile-software-development, ruby-and-jruby
+
+# Rsift - A Ruby client for Datasift
+
+[DataSift](http://datasift.net) is a "real time social media filtering engine". They have recently published an  [API](http://support.datasift.net/help/kb/rest-api/api-documentation) which allows developers to create and manage "streams".
+
+A stream in Datasift context is really a filter over their fire-hose of incoming data from Twitter and other media sources. Another part of their API presents a WebSockets implementation for a client to consume data which matches a stream or filter.
+
+The domain of social media curation is very hot right now, so I was very interested to receive a alpha API key to try it out. I work mainly with Ruby, and there wasn't a client out there yet to "wrap" the Datasift API in Ruby, so I thought that writing that gem would be my first step.
+
+The gem can be downloaded from [rubygems](https://rubygems.org/gems/rsift) and the code is open source, and available at [github](https://github.com/sshingler/rsift).
+
+There are three main facets to the API: Streams, Comments and Data. Their [API documentation](http://support.datasift.net/help/kb/rest-api/api-documentation) takes us through the semantics of each object. 
+
+My first port of call was to create a mechanism to send an http request to their API endpoint. Interestingly, Datasift are calling it a REST API, but actually every message is a GET - even creating an object such as a new Stream. I decided to create a class for each API Object: Stream, Comment, Data; which each have a Model superclass to instantiate the endpoint url, api key and username.
+
+From there, it was a question of understanding the URL design for each object. I chose to create a method, simply called 'do' on each object which sets up the correct URL for each method and calls it.
+
+I've ended up with this pattern:
+
+    stream = Rsift::Stream.new(api_url, api_key, username)
+    response = stream.do("my") # lists my streams
+  
+    opts = {:stream_id => "1"}
+    response = @stream.do("get", opts) # gets a stream, by id
+
+
+The websockets implementation was new to me. I found the [em-http-request](https://github.com/igrigorik/em-http-request) part of EventMachine on github, which made it incredibly easy to implement a client listener to the Datasift websockets server:
+
+    def self.perform(stream_identifier)
+      endpoint = "ws://stream.datasift.net:8080/"
+
+      EventMachine.run {
+        http = EventMachine::HttpRequest.new(
+            "#{endpoint}#{stream_identifier}").get(:timeout => 0)
+
+        http.callback do
+          puts "Connected to datasift" 
+        end
+      
+        http.errback do 
+          raise SocketError.new("Datasift threw an error")
+        end
+      
+        http.disconnect do
+           raise SocketDisconnect.new("Datasift disconnected me.")
+        end
+
+        http.stream { |msg|
+          yield msg
+        }
+      }
+    end
+
+This can be called like so:
+
+    Rsift::Socket.perform(stream_identifier) do |message|
+      puts message
+    end
+
+I've added in a couple of custom error classes to handle being disconnected by Datasift, or if the socket throws an error.
+  
+Please take a look at the test code on github for more usage examples.
+
+By way of a disclaimer, there are a couple of limitations with the code as it stands right now: (and which I hope to find the time to improve!)
+
+* All calls require credentials to be passed in
+* All responses are in JSON
+
+I'd love to get some feedback, please let me know if you're finding it useful.

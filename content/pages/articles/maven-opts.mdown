@@ -1,0 +1,16 @@
+read more: Read More
+date: 2009-03-05T10:30:00.001+01:00
+summary: Avoiding Java heap space errors in the JVM with Maven and MAVEN_OPTS.
+categories:
+
+# Customising the JVM memory allocation using MAVEN_OPTS
+
+A while back, I kept getting 
+
+	java.lang.OutOfMemoryError: Java heap space 
+
+...type errors, working on a large Java legacy system. There were some files in there with over 3000 lines of code! It was a bit of a death march project, to be honest.
+
+Anyway, I messed around for a little while with different attempts at setting MAVEN_OPTS to give the JVM a decent amount of memory, here's what i ended up with:
+
+	MAVEN_OPTS='-Xms256m -XX:MaxPermSize=1024m -Xmx1024m'

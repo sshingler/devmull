@@ -1,0 +1,29 @@
+read more: Read More
+date: 2010-09-28T10:24:00.000+01:00
+summary: We've just used agile methodologies to launch a new product, [Link Builder](http://www.wordtracker.com/linkbuilder) at [Wordtracker](http://www.wordtracker.com). We had to build the app and get to market quickly. That meant defining a 'viable product' and launching with fewer features than we would ideally have liked. It would prove to be crucial to gain traction and avoid falling behind our competitors. Agile Methodologies give us some structure and methods to help connect software development to business.  I'd like to cover the three aspects which have been important to us in launching Link Builder...
+categories: agile-software-development
+
+#Launching using Agile.
+
+We've just used agile methodologies to launch a new product, [Link Builder](http://www.wordtracker.com/linkbuilder) at [Wordtracker](http://www.wordtracker.com). We had to build the app and get to market quickly. That meant defining a 'viable product' and launching with fewer features than we would ideally have liked. It would prove to be crucial to gain traction and avoid falling behind our competitors.
+
+Link Builder is an app which allows you to analyse the link footprint of your competitors' websites and manage link building campaigns to drive traffic to your website.
+
+The return on investment over time between waterfall and agile release plans can be seen in my sketch below. The jagged line for Agile shows a lower investment risk in getting to market, and an earlier revenue stream from real customers. The revenue is re-invested in polishing the app through successive iterations:
+
+![picture alt](/photo.jpg "Agile versus Waterfall release graph")  
+
+The product eventually reaches the same point as the traditional 'hockey stick' line: but with less cost, earlier revenue and valuable feedback from customers that should create a superior application.
+
+There's nothing we do at Wordtracker to diverge from well documented standard Agile methodology, but the most important aspects of the [Agile manifesto](http://agilemanifesto.org/) are not the well trodden paths of daily standups, pair programming or [TDD](http://en.wikipedia.org/wiki/Test-driven_development), but the subtle challenges of human interaction.
+
+"People over processes" goes out the cry, but too often the agendas and egos of the people involved in designing an app can dominate an implementation where they shouldn't. Agile Methodologies give us some structure and methods to help neutralise those dangers and connect software development to business. I'd like to cover the three aspects which have been important to us in launching Link Builder - the internal customer, iterations and estimating.
+
+Internal Customer: Having someone in [this role](http://en.wikipedia.org/wiki/Internal_customer) who knows the problem domain inside out helps hugely. This person can forge a clear roadmap of features which should give the greatest return to a user and clearly communicate the business goals and processes of the software to the developers. It is so important to give the internal customer the respect and space to do his job. Trusting the priority of features, and the [domain specific language](http://en.wikipedia.org/wiki/Domain-specific_language) he'll choose for the tool will be good. That is to say: Good enough to launch - any decision can be changed. The clarity and precision a good internal customer brings to the planning "game" hugely decreases the cost of that meeting and gives a developer the confidence only to query a call which jolts her sensibilities.
+
+Iterations: Our iterations are fortnightly, starting on a Thursday. This means that we're only committing to business tasks for two weeks at a time. Rhythm is a vital aspect of productivity, and the iteration start point and weekends are the biggest cadences of an iteration's rhythm. It therefore makes sense not to have them meet. The brevity of an iteration gives us the ability to be very flexible when responding to our users' needs, or the needs of the internal customer. We frequently don't end up implementing what we thought we should a month prior - because it is no longer the most important thing to work on in the present tense. At the end of an iteration, we've found it really helpful to make a short screencast showing off the features we've just made. It helps everyone, especially the customer services team keep in touch with what new features we're about give our users. Also, we try to roll out new features only at the end of an iteration, again so we're all in touch with the timing of new features.
+
+Estimating: There's much debate in Agile circles on the subject of "story points". [The Agile Samurai](http://www.pragprog.com/titles/jtrap/the-agile-samurai), recently released by the Pragmatic Programmers covers this subject with eloquence. At Wordtracker we've chosen to express our estimations in terms of "Ideal Days". Commercial people could hardly care less about development methodologies, and will lose interest quickly if you try to tell them about an abstract points system when they ask how long something will take to deliver. Ideal days, however, can be explained very easily: "It is how long we think it'll take if everything goes really well - it is a sunny day scenario."
+
+By using Agile methodologies we were able to launch Link Builder in a short time scale. Showing the app initially only to people who have bought from us before, got us some fantastic feedback which told us that we're going in the right direction. We're continuing to add the right features - two weeks at a time.
+

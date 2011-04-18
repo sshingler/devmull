@@ -1,0 +1,62 @@
+read more: Read More
+date: 2010-05-12T10:24:00.000+01:00
+summary: A couple of days ago I attended an Unconfernce called Leancamp. My main reason for going was that David Heinemeier Hansson - the creator of RubyOnRails and co-author of Getting Real and Rework was speaking.
+categories: agile-software-development
+
+#A review of Leancamp
+
+A couple of days ago I attended an Unconfernce called [Leancamp](http://register.leanca.mp/notify/).
+
+My main reason for going was that David Heinemeier Hansson - the creator of RubyOnRails and co-author of Getting Real and Rework was speaking.
+
+First, some definitions:
+[Lean](http://en.wikipedia.org/wiki/Lean_manufacturing) is a production practice that considers the expenditure of resources for any goal other than the creation of value for the end customer to be wasteful, and thus a target for elimination.
+It is currently trending in the world of software as a way of furthering the principles of agile development as a methodology to connect software development with business.
+
+An Unconference is a gathering of people around a theme or purpose, but without a defined schedule. The schedule develops from conversations amongst the attendees, on the day. Low fees (my ticket cost £10) and a lack of sponsorship are features of an unconference, and the concept has grown out of science fiction conventions.
+
+The introductory speeches were a slightly confused jumble of the principles of Lean development, and how they apply to making profitable software in 2010.
+
+Next up was a piece by the CEO of Seedcamp, Reshma Sohoni.
+Key points for me were:
+* It is crucial to connect with your customers to make sure that you are building something that people want to buy, and that they want to buy it from you. Consultancy can really help your business to do this.
+* Care must be taken to find a balance between customer-driven features and using your own expertise to develop features which the customer wouldn't have thought of, but that they love when they get to use it.
+* The key difference between geek-preneurs "playing with" VC funding and actual successful businesses is finding and building something that people will pay for.
+* Hire passion, not experience.
+* Scale your team vertically.
+
+The first proper unconference spot I went to was a session from John Williams, the author of ["Screw work, lets play"](http://www.screwworkletsplay.com/).
+He drew up a chart of the ideal roles he felt you should have in a creative team, using slightly outlandish titles such as:
+* Mechanic
+* Creator
+* Star
+* Supporter
+* Deal maker
+* Accumulator
+* Lord
+* Trader
+
+The discussion centred around how these characters need each other to create a successful product, and around the process flow between them. By asking questions such as: "What aspects of your work are you most enthused about?" you can work out which role you really are. We talked about playing to your strengths: there's little point in trying to be a mechanic if you just aren't good at it; but also you need generalists or polymaths if you can't afford to hire more people.
+
+One point that stuck with me was: "Lords are prone to over-researching - if you have more than one Lord you move very slowly."
+
+Moving onto the main event of the day. The [dark prince](http://en.wikipedia.org/wiki/David_Heinemeier_Hansson) himself: David Heinemeier Hansson.
+DHH was basically there to pimp Rework, his recent book. I'd estimate that a good percentage of the attendees had read the book, and that almost all attendees were fully on board with Getting Real principles. Unfortunately DHH didn't bother to find this out with a quick straw poll, but instead ranted through the cartoon world of Rework, bashing out the familiar, simplistic views in a reedy, tense tone.
+
+Particularly galling opinions were: 
+* A financial plan is nothing more than a financial wish.
+* Plans are a waste of time - the sooner you realise that, the sooner you can forget them.
+* Plans are worth no more than a 15 min pres, but they get much more credence than that in business.
+
+There was also some common sense: 
+* A plan that doesn't change your behaviour is worthless.
+* Plans promote an illusion of agreement.
+* Decisions are temporary.
+* You get real feedback from real software.
+* People think they want a ton of features, but they actually buy simple solutions to clear problems.
+
+Other points: 
+* When building Basecamp, DHH and Fried didn't want to compete with other forum providers, or CMS providers, or (shudder) Sharepoint - they only wanted to create something which is "slightly better" than email. Which is interesting, because I've always thought Basecamp is "slightly worse" than email.
+* Making your app modular or optional will result in the quality of the user experience degrading.
+
+There then followed a question and answer session, via skype from San Francisco with [Eric Ries](http://www.startuplessonslearned.com/). Eric did a masterly job in engaging with DHH's confrontational style without being drawn into it, and provided some much needed balance to the assertion that all VC funded companies are bad.

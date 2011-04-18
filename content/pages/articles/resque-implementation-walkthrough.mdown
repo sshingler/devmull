@@ -1,0 +1,77 @@
+read more: Read More
+date: 3 Nov 2010
+summary: Our users at Wordtracker search for keywords and linking domains many thousands of times each day. We run the majority of these searches as "background jobs" to maintain a good user experience. We'd developed an in-house system written in Ruby and Sinatra for running these jobs, but the robustness and error reporting wasn't as good as we wanted. I decided to take a look at the [Redis](http://github.com/antirez/redis) backed [Resque](http://github.com/defunkt/resque) (pron. res-queue |ˈreskyoō|) to see whether it would work well for us.
+categories: agile-software-development, ruby-and-jruby
+
+# Running background jobs with Resque
+
+Our users at Wordtracker search for keywords and linking domains many thousands of times each day. We run the majority of these searches as "background jobs" to maintain a good user experience.
+
+We'd developed an in-house system written in Ruby and Sinatra for running these jobs, but the robustness and error reporting wasn't as good as we wanted. I decided to take a look at the [Redis](http://github.com/antirez/redis) backed [Resque](http://github.com/defunkt/resque) (pron. res-queue |ˈreskyoō|) to see whether it would work well for us.
+
+The first thing to understand when looking at a background job runner like Resque, is the aspects of the process you can hand off and the aspects which you still have to take responsibility for within your application.
+
+To work this out, here's the process flow from a Wordtracker search:
+
+* A user hits a search button somewhere on one of our tools.
+* We check that no job is currently running, for that search type, for that user.
+* We start the job. (It is at this point that we use Resque to fork into the background process).
+* The job runs.
+* The user sees the results.
+* We clean up the job and archive it.
+
+So, the application has to keep track of all jobs - particularly the state a job is in. Resque is only responsible for the actual running of a job.
+
+Lets break down the resque part of the process:
+
+After doing the "check" mentioned above, we drop into the run method on the Job model, which looks like this:
+  
+    def self.run(user_id, name, args = {})
+      job = Job.create!(:user_id => user_id, :name => name, :state => "new")
+      Resque.enqueue(Jobs.const_get(name), user_id, args)
+      job
+    end
+  
+The enqueue method is where we fork to Resque. The name of the job that's passed into that method matches one of the class names which are Resque jobs. We've put all our Resque job classes in a file lib/jobs.rb. For example, we have a job called "MetricsList", which will be passed in as a name, and match a class like this: 
+    
+    class MetricsUnsavedList < ResqueJob
+    
+The other parameters are the id of the user who kicked the job off, and a hash of job-specific options. It is a common idiom in Ruby to present arguments as a hash when the contents of the hash might vary and to initialise an empty hash to make the parameter optional.
+
+A Resque class must respond to the perform method and set the queue name. Because there are many different types of search a user can do using Wordtracker, we decided to create a ResqueJob class to [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself) up common aspects of job handling - those that happen before and after the actual business of running the job. For this transactional pattern, yielding inside a block is helpful, we've wrapped a while_updating_job_status method inside each perform call to handle these functions:
+
+* name the job
+* set it to a running state
+* if we're still runnning, set to complete
+* handle any errors
+
+Here's what that looks like:
+
+    def self.while_updating_job_status(user_id)
+      job_name = self.name.split("::")[-1]
+      @job = Job.find_by_user_id_and_name(user_id, job_name)
+      @job.update_attribute(:state, "running") if @job.state == "new"
+      begin
+        yield
+        if @job.state == "running"
+          @job.update_attribute(:state, "complete")
+        end
+      rescue Exception => e
+        handle_job_error(e.message)
+        raise
+      end
+    end
+    
+The reason for the funky self.name.split("::")[-1] is because we needed the namespace of the classname to be dropped - can anyone think of a better way of doing that?
+    
+Then, the perform call inside the MetricsList class looks like this:
+
+    def self.perform(user_id, args)
+      while_updating_job_status(user_id) do
+        # actual search code goes here
+      end
+    end
+
+The reason for the generic exception handling is that the Resque jobs (obviously) happen inside a different process, so errors won't be passed back directly to our main application which started the job. To get around this, we chose to add a message attribute on the Job model and set the state of the job to error. handle_job_error is also called at any point in the main body of the perform method where we think there's a chance an error might be thrown and we want to handle it in a specific way.
+
+We're very happy with our Resque implementation. Since going live a couple of months ago, it has run almost a million searches with a failure rate of less than 1%.

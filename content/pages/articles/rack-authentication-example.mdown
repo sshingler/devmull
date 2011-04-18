@@ -1,0 +1,19 @@
+read more: Read More
+date: 2009-12-01T22:30:00.001+01:00
+summary: I have been searching for some time for a simple rack based authentication system. A key requirement for me is that I'd like it to work with the data storage mechanism of my choice - MongoMapper. I spotted a project on github called Chowder, which worked really nicely...
+categories: ruby-and-jruby
+
+# Using Chowder for Simple Rack-based authentication
+
+I have been searching for some time for a simple rack based authentication system. 
+
+Something just complex enough.
+
+A key requirement for me is that I'd like it to work with the data storage mechanism of my choice (which this week is [MongoDb](http://www.mongodb.org)/[MongoMapper](http://github.com/jnunemaker/mongomapper)). 
+
+I spotted a [post](http://groups.google.com/group/sinatrarb/browse_thread/thread/3cdd25a42a81df2b/ec01dd35bac50df4?lnk=gst&q=chowder#ec01dd35bac50df4) on the sinatra mailing list which mentioned a fairly new contender for this sort of thing, called [chowder](http://github.com/ichverstehe/chowder).
+
+It was really easy to get things going, although I found the parameters to 'use' needed to be wrapped in {} - at least when using ruby 1.8.7 - I wonder if the chowder developers are on ruby 1.9 where that kind of voodoo is acceptable..?
+
+I've also put up a branch to a fledgling sinatra app which uses Chowder, complete with some cucumber features which test sign up and log out with a MongoDb/MongoMapper document store. That's [here](http://github.com/sshingler/mesomelas/commit/792218f26c58c6d41c4d0de2bf8df8f876f6b306) on the basic-chowder-features branch.
+

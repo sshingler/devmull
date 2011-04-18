@@ -1,0 +1,48 @@
+read more: Read More
+date: 2010-02-27T14:34:00.001Z
+summary: I was lucky enough to be a beta-tester for MongoHQ, the hosted MongoDB service. Yesterday (20100226) they came out of private beta, and launched their  pricing options to the world. The results, as MongoMapper author John Nunemaker tweeted, were surprising...
+categories: agile-software-development
+
+# Thoughts on MongoHQ pricing
+
+I was lucky enough to be a beta-tester for [MongoHQ](https://app.mongohq.com), 
+the hosted [MongoDB](http://www.mongodb.org) service. 
+
+I am really enjoying using the service - the web interface is sweet, but it 
+is really the performance which has been outstanding. How do they make a network
+based data store faster than my local copy?!?
+
+Yesterday (20100226) they came out of private beta, and launched their 
+[pricing options](https://app.mongohq.com/signup) to the world.
+
+The results, as MongoMapper author John Nunemaker
+[tweeted](http://twitter.com/jnunemaker/status/9687977508), were surprising.
+
+Firstly, there's no free [Heroku](http://heroku.com)-like option. 
+The cheapest option is actually more expensive than a budget virtual
+private server - on which you could set up MongoDb and whatever else you desire.
+
+Secondly, each price point only allows a 2Gb database out of the box. 
+The cheapest plan stipulates $2 for every extra Gb.
+
+Document stores such as MongoDB are ideal for feed trawling and the like where 
+there isn't a massive amount of relational structure in your data model.
+Lets imagine you've got a side project which is harvesting a bunch of feeds. 
+You've no idea whether this is a monetisable project yet, 
+but you'd like to try it out and play with it. 
+Such a project could easily grow to a 10Gb document store.
+
+MongoHQ want you to pay for the last 8 of those Gb. 
+That's $41/month on the cheapest plan, and $107/month on the most expensive plan.
+The most expensive plan gives you more databases and more user accounts,
+which is obviously not much help on a single project.
+
+I expected a MongoHQ to go with a strategy which would tempt developers to try
+this emerging technology and move away from traditional RDBMS 
+such as MySQL, which are offered for free in the basic Heroku plan.
+After all, what is to stop Heroku from offering Mongodb support themselves?
+
+MongoHQ seem to believe they are offering a premium product, especially given the
+fantastic performance, but from an open source data store. 
+
+I'm not convinced it'll work, but I'll continue to watch with interest.

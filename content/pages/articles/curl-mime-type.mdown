@@ -1,0 +1,41 @@
+read more: Read More
+date: 2009-08-01T14:47:00.000+01:00
+summary: Using curl with the -I flag retrieves just the header information - handy for detecting the MIME type of a URL.
+categories:
+
+# Using curl -I to detect the MIME type of a URL
+
+[curl](http://curl.haxx.se/) is a command line tool for transferring files with URL syntax. 
+
+The -I option retrieves just the header information
+
+e.g.: 
+
+	$ curl -I http://google.com
+	HTTP/1.1 301 Moved Permanently
+	Location: http://www.google.com/
+	Content-Type: text/html; charset=UTF-8
+	Date: Tue, 25 Aug 2009 00:24:38 GMT
+	Expires: Thu, 24 Sep 2009 00:24:38 GMT
+	Cache-Control: public, max-age=2592000
+	Server: gws
+	Content-Length: 219
+	
+and lots of other interesting tidbits too: 
+
+	curl -I http://farm4.static.flickr.com/3562/3829865330_c2d6012c99.jpg
+	HTTP/1.1 200 OK
+	Date: Tue, 25 Aug 2009 00:26:12 GMT
+	Content-Type: image/jpeg
+	Connection: keep-alive
+	Server: Apache/2.0.52 (Red Hat)
+	Cache-Control: max-age=315360000
+	Expires: Mon, 28 Jul 2014 23:30:00 GMT
+	Last-Modified: Mon, 17 Aug 2009 10:10:16 GMT
+	Accept-Ranges: bytes
+	Content-Length: 124866
+	Age: 12
+	X-Cache: HIT from photocache408.flickr.ac4.yahoo.com
+	X-Cache-Lookup: HIT from photocache408.flickr.ac4.yahoo.com:81
+	Via: 1.1 photocache408.flickr.ac4.yahoo.com:81 (squid/2.7.STABLE6)
+	
