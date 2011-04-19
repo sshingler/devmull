@@ -1,11 +1,14 @@
 
 
-# About
+# About Steven Shingler
 
-This is the personal blog of Steven Shingler, Chief Technical Officer of [Wordtracker](http://www.wordtracker.com), a [search marketing](http://www.wordtracker.com) software company based in London, UK. I lead an agile team of ruby developers connecting software with our business.
+This is my personal blog. I write about agile software development and Ruby. I'm most interested in connecting the business of producing software with the business of selling software. I find it fascinating and challenging to connect the goals and desires of the two disciplines which are often disparate, contradictory and therefore unproductive when joined. Many of the posts are categorised here under "Agile software development". Agile is really just a set of techniques which attempt to bridge that gap. It is difficult to do Agile well and easy to do it poorly, but then, that goes for most things.
+
+At work, I'm the Chief Technical Officer of [Wordtracker](http://www.wordtracker.com), a [search marketing](http://www.wordtracker.com) software company based in London, UK.
 
 My time hasn't always been spent in software. I studied double bass performance at the [Royal Academy of Music](http://www.ram.ac.uk). After graduating in 1996 I spent four years performing worldwide with various symphony, opera and chamber orchestras, including the [Philharmonia](http://www.philharmonia.co.uk) Orchestra, London Symphony Orchestra, Royal Philharmonic Orchestra and the Halle Orchestra. I was invited to play at the Salzburg Festival and recorded for Deutsche Grammophon and Phillips at Abbey Road studios, London.
 
-By 2000 I felt I'd reached a natural end to what I could achieve as an orchestral bass player and I started looking around for employment as a coder. I was really lucky to get a job with [Ogilvy Interactive](http://www.ogilvy.com/About/Network/OgilvyInteractive.aspx), a large digital marketing agency. At Ogilvy I learnt a huge amount, across a broad range of subjects from Javascript to administering Apache. The full path from Ogilvy to Wordtracker is on my [Linkedin profile](http://uk.linkedin.com/in/sshingler).
+By 2000 I felt I'd reached a natural end to what I could achieve as an orchestral bass player and I started looking around for employment as a coder. Coding had been a schoolboy hobby and I'd been running a computer lab at the Academy. I was really lucky to get a job with [Ogilvy Interactive](http://www.ogilvy.com/About/Network/OgilvyInteractive.aspx), a large digital marketing agency. At Ogilvy I learnt a huge amount, across a broad range of subjects from Javascript to administering Apache. The full path from Ogilvy to Wordtracker is on my [Linkedin profile](http://uk.linkedin.com/in/sshingler).
 
 I tweet (usually off-topic) at [@sshingler](http://twitter.com/sshingler) and take pictures at [Flickr](http://flickr.com/photos/sshingler).
+
