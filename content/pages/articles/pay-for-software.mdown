@@ -1,0 +1,67 @@
+read more: read more...
+date: 23 April 2011
+summary: We've got used to free software. Either we expect it to be free, or (as with Facebook and Gmail) we're happy to use our personal data as currency. There's a ton of interesting thinking already on the web on the psychological shift that's happened in SAAS (Software as a Service) over the past, say, 5 years, but that isn't really my area - I'm much more interested in building software which people are happy to pay for. I thought it would be interesting to go through a very simple model of financing a new software service from conception to 12 months after launch.
+categories: agile-software-development
+
+# It's hard to get people to pay for software
+
+We've got used to free software. Either we expect it to be free, or (as with Facebook and Gmail) we're happy to use our personal data as currency.
+
+There's a ton of interesting thinking already on the web on the psychological shift that's happened in SAAS (Software as a Service) over the past, say, 5 years, but that isn't really my area - I'm much more interested in building software which people are happy to pay for. I thought it would be interesting to go through a very simple model of financing a new software service from conception to 12 months after launch.
+
+### Why would you pay for software?
+
+For someone to subscribe to a software product, that software must increase their revenue, productivity or output in some way by a value greater than the cost of the product. That could happen directly: perhaps by giving you some actionable data points which provide an immediate return; or indirectly: for example by making your internal processes more efficient. That assumption alone dictates that paid-for SASS is almost exclusively B2B.
+
+
+There's tremendous energy amongst software developers right now to create "Product". There are many threads on Hacker News similar to [this one](http://news.ycombinator.com/item?id=2471130). It details a software developer with, I'm sorry to say, massive naivety - develop a software product and then puzzle over why so few people subscribed. Creating value in software is difficult. Beyond the initial concept you need knowledge of how to reach out to your audience and of course the software development skills to build the product. You'll need design skills to make it look good too.
+
+### Bootstrapping a product - some assumptions
+
+Let's take a very simple model and work through what's possible. Lets say you're a software developer and you've got a great idea for a software product. To keep things simple, I'll make some assumptions:
+
+* You're convinced that it merits a $20/month subscription and that there's a potentially big market.
+* You think it'll take 6 months to build the app to a point where it has enough features to launch. (The minimum viable product.)
+* You can't do it all by yourself. You need a couple of collaborators too. That might be another developer and a designer; or another developer and a customer support/marketing person. Still - lets assume a team of 3.
+* The three of you are going to give up your day-jobs and work on this full time because you all believe in the project and its potential.
+* You each need an income of, say, £3000/month to live off. Because you're highly skilled software developers and, well, you're worth it.
+* Let's not include any other costs, such as rent, incoming data or hosting.
+
+I'm sure we can all quibble with those very broad brush assumptions, but I think they're provide us with a good enough baseline to do some projections.
+
+So, you've got to launch day. You've done a fantastic job on getting the word out there, getting people to link to you, sign up to an alpha, a mailing list and generally building up expectation around the general awesomeness of your shiny new product. You've also built the product.
+
+You get 20 paying customers in the first month and you're absolutely stoked. Over the next 12 months the three of you keep working on the product full time: adding more features, responding to customer feedback, fixing bugs, marketing the product, doing PR, speaking at conferences etc. Generally working your asses off.
+
+### Washing up the numbers
+
+Let's be really positive about projections at this point and say you're going to have 1000 paying customers just 12 months after launch. That would be a wild success, right? Well here's how the numbers play out:
+
+![picture alt](/attachments/new-product-numbers.png "Numbers")
+
+Oh. 12 months after launch, you're £77,000 in the red. You tipped the £100,000 overdraft point just after launching.
+
+Lets look at the hockey stick view of those numbers:
+
+![picture alt](/attachments/new-product-hockey-stick.png "Numbers")
+
+We're in a fix here, team. That hockey stick isn't the right way around yet.
+
+### Where from here?
+
+Apart from the (impossible) task of getting a bank manager to agree a £100,000 overdraft with no collateral, you've got the difficulty of deciding whether to continue with this venture. The flawed assumption that the user count will keep rising linearly could be especially dangerous. If a competitor came along with a bigger market presence that's going to make things very tough. At least if you've got this far you've a fighting chance of increasing your retention rates and gaining new customers.
+
+Of course, it is this predicament that Venture Capitalists try to solve. They throw money at the problem so that you can get to market faster, to learn sooner rather than later whether you're going to be viable in the long term. In backing high numbers of similar companies, they hope to find one hugely successful star, thereby cancelling out the losses from the predominant group of also-rans. In taking VC funding, you sacrifice the lion's share of your business in the hope that the amount you're left with will be worth more in the long term as a result of their investment. That's a whole other business model.
+
+So that's a very quick and simple view of bootstrapping a startup. I deliberately haven't touched on freemium models, conversion/retention rates or launch methods. If you're considering going through this process for your own awesome concept then these are the key parameters:
+
+* How many people are involved?
+* How little are you willing to pay yourselves?
+* What is your minimum viable product?
+* How soon can you launch?
+* How will people get to hear about you?
+* Why is your app worth paying for?
+* How many subscribers will you be able to attract?
+
+That last point is the most important, and that's the one you don't have control over.
+
