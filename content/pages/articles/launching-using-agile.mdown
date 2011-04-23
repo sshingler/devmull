@@ -11,7 +11,7 @@ Link Builder is an app which allows you to analyse the link footprint of your co
 
 The return on investment over time between waterfall and agile release plans can be seen in my sketch below. The jagged line for Agile shows a lower investment risk in getting to market, and an earlier revenue stream from real customers. The revenue is re-invested in polishing the app through successive iterations:
 
-![picture alt](/photo.jpg "Agile versus Waterfall release graph")  
+![picture alt](/attachments/hockey-stick.jpg "Agile versus Waterfall release graph")  
 
 The product eventually reaches the same point as the traditional 'hockey stick' line: but with less cost, earlier revenue and valuable feedback from customers that should create a superior application.
 
