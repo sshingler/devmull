@@ -60,7 +60,7 @@ So that's a very quick and simple view of bootstrapping a startup. I deliberatel
 * What is your minimum viable product?
 * How soon can you launch?
 * How will people get to hear about you?
-* Why is your app worth paying for?
+* Why is your app worth paying for, and how much?
 * How many subscribers will you be able to attract?
 
 That last point is the most important, and that's the one you don't have control over.
