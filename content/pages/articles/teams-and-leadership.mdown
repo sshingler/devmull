@@ -1,0 +1,66 @@
+read more: Read more...
+date: 26 June 2011
+summary: The Art of captaincy, ostensibly cricket captaincy, transcends sport to become a treatise on leadership. When reading it, I realised that many aspects and issues he deals with in the book apply directly to leading a team in disciplines outside sport. Restructuring abstract notes made from Brearley's already terse, clinical writing has been a really interesting challenge. I hope that what follows is of interest to software developers and those trying to lead them.
+categories: reviews
+
+# Teams and the art of leadership
+
+I recently finished reading Mike Brearley's "The Art of captaincy" (Pub 1985, ISBN-10: 0752261843). Brearley is a former cricketer who led the England cricket team in 31 of his 39 Test matches, winning 17 and losing only 4. He was described by team mates as "having a degree in people" and now works as a leading psychoanalyst. The Art of captaincy, ostensibly about cricket captaincy, transcends sport to become a treatise on teamwork and leadership. When reading it, I realised that many aspects and issues he deals with in the book apply directly to leading a team in disciplines outside sport. For example, Sam Mendes mentions in the foreword that he consulted it when making "American Beauty".
+
+I found myself making notes as I went through the book, detailing passages which seemed to apply most directly to my work: leading a team of software developers. Restructuring abstract notes made from Brearley's already terse, clinical writing has been a really interesting challenge. I hope that what follows is of interest to software developers and those trying to lead them.
+
+# On teams
+
+## Team sizes
+
+A team should be small enough for communication to be simple, for individuality to be maintained and for each team member to know the others well. It is not accidental that sporting teams range from around seven to 15 members. A true group cannot exist with less than that and more becomes a crowd. Two is not a team. They may combine well together, but too much hangs on the individuals and how they happen to get on. Threes tend to divide into a two and a one; fours into two pairs. Five or six people can make a group, but the absence of one or two individuals (e.g. for illness or holiday) makes its identity precarious.
+
+## Balancing inputs
+
+The leader has the benefit of ideas from all sources. If they differ from his, he discovers where the opposition lies, and what form it takes. A leader will be confronted with sometimes intense pressure from the team to fit in with the prevailing or desired emotional mood. These demands may be conscious or unconscious. A leader may be terrorised into an approved set of attitudes. A leader may be pulled into a mood of delinquency or persecution in ways which undermine the performance of the task.
+
+## Giving feedback
+
+Different team members need different forms of praise. Praise offered too freely or too unctuously become devalued. A leader should get to know people's strengths and to learn which sorts of questions to ask of which team members. A leader's input, even in an informal setting, may set creative ideas going, or give a team member a sense of his real value.
+
+# On team members
+
+Team success is the product of personal successes. A person's efforts should be valued by the rest, particularly when their contribution is unglamorous. Team members learn the habit of thinking for themselves and their self-respect is enhanced when their right to be heard is fully accepted and the space given to them to speak helps them formulate good responses.
+
+A team member feels the benefit of security of being well regarded and confidence to respond to the realistic but challenging standards which are opened up for him. Roles may also restrict and the same role may work well or badly at different times. A team member can fail to value himself enough, leading to diffidence in the team. Individual protagonists take their meaning from, and are strongly influenced by, the group context.
+
+## Difficulties within a team
+
+The atmosphere working in a difficult environment promotes denial. Worries are underplayed and a cynical attitude with an emphasis on efficiency predominates. The outcome is often friction, illness among staff and high levels of mistakes. At times of anxiety and stress the same qualities that have been helpful and vital are inevitably exaggerated or distorted.
+
+The pull of the team may be into a position that is the opposite of the emotional orientation of those making the demand. The leader may be lassoed into an answering emotional attitude. The pressure may be put on him to become a tyrannical boss who relieves the others of the need to think for themselves. Or he may be required to become passive and cringing before a powerful bullying process predominant in a group at that particular time.
+
+A way of lessening guilt is to find ways of making others share it or take it on. The outcome of succumbing to such pulls is that the clarity that leaders need to do the job properly has been hijacked. Power now lies with the unconscious group, with the leader only the leader in name. It is hard for someone who is caught up in the turmoil of pulls to see what's going on, much less to be able to understand the forces in play and regain control.
+
+## On meetings
+
+Consultation with team members takes different forms and can be used for different ends. It may merely be the means by which the leader gains technical or practical information on which to base his decision. It may also be the occasion for a decision. Or it may be seen, and used, more as an end in itself, a process of sharing and sorting out feelings, antagonistic or otherwise, within the group. We are right to be skeptical of meetings, but a good team meeting can have the output of a renewed commitment to each other and the side.
+
+## When things aren't going well
+
+If a team member is making silly mistakes all consultation, delicacy of feeling, weighing up of pros and cons need to give way to orders, bluntness, decisiveness. Discipline, will power, effort and guts hang together when under pressure. When these are alone the hallmarks of a leader too much is lacking; they represent a narrow view of human nature and of the possibilities of motivation; but without them, leadership is toothless.
+
+An insecure team member may find a degree of acceptance by means of assuming the role of court jester, which provided a feeling of security, however precarious. The court jester behaviour can also feed a malicious humour in the rest of the team, who can get on with their own jobs while enjoying vicariously some of the jester's altercations with authority: the group push him further into the part
+
+Team members may attempt to deal with their doubts by giving up; being passive or depressed - thereby placing a demand on the leader to initiate and take responsibility for everything. This may trigger a leader into becoming bossy and demanding, which perversely the team may have provoked in order to mock. 
+
+One sullen or indolent team member can stand out like a sort thumb - her private interest may conflict with that of the group. Enable the team to reach creative solutions without denying their anxieties. To bring people together in a common task so that they take pleasure in their joint and individual work.
+
+# Finally: On leaders
+
+A team leader is bound to be the recipient of emotional demands and pressures from those she is responsible for. A good leader or manager is interested in what makes people tick, particularly when they seem to be difficult or withdrawn or under-achieving. This kind of interest and attendant attitude, involve the capacity to step back from the hurly-burly of the group. The leader sacrifices the pleasures of being one of the boys, indulging in the dramas of gossip and having a go at the boss.
+
+The leader is influenced by the team character, but set apart from it, responsible to a degree for moulding it. She is of it, but separate from it, required to be part of it, acting within it whilst overseeing the actions of team members.
+
+Leaders cannot avoid discomfort. They are required to hold in balance conflicting aims and values. Unless she is in reasonable balance herself, she will not be able to do so. But being balanced does not mean being flat, innocuous or bland.
+
+No team leader can bring out the best in all team members. Temperamentally, we all respond better to some than to others. There are those who impose on us pressures that make us particularly touchy, or which arouse our own anxieties unduly.
+
+Leadership calls for complex qualities which are in conflict with each other: Passion and detachment; vision and common-sense. An authoritarian streak and a truly democratic interest in team and points of view. Conviction but also the capacity to not rush in; the ability to tolerate doubt and uncertainty.
+
+The leader has to be able to take in and think about the anxiety of those who work in the team. It is important to convey that their predicament and anxieties are bearable. If this is done, the team is less likely to resort to damaging states of mind such as defeatism, lack of initiative or complacency. Nor will it be so likely to split into antagonistic factions. This function, of containing anxiety and handing it back in a form that can be thought about, is based on that offered both by our first nurse - the mother to her baby, and subsequently by both parents throughout childhood, adolescence into adulthood.
