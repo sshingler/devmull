@@ -2,7 +2,7 @@
 
 # About Steven Shingler
 
-This is my personal blog. I write about agile software development and Ruby. I'm most interested in connecting the business of making software with the business of selling software. I find it fascinating and challenging to connect the goals and desires of the two disciplines which are often disparate, contradictory and therefore unproductive when joined. Many of the posts are categorised here under "Agile software development". Agile is really just a set of techniques which attempt to bridge that gap. It is difficult to do Agile well and easy to do it poorly, but then, that goes for most things.
+This is my personal blog. I write about agile software development and Ruby. I'm most interested in connecting the business of making software with the business of selling software. I find it fascinating and challenging to connect the goals and desires of the two disciplines which are often disparate, contradictory and often unproductive when joined. Many of the posts are categorised here under "Agile software development". Agile is really just a set of techniques which attempt to bridge that gap. It is difficult to do Agile well and easy to do it poorly, but then, that goes for most things.
 
 At work, I'm the Chief Technical Officer of [Wordtracker](http://www.wordtracker.com), a [search marketing](http://www.wordtracker.com) software company based in London, UK.
 
