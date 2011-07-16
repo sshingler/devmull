@@ -96,8 +96,8 @@ The forking blocks feel like code, rather than configuration, but they are extre
         
 ## Finally, a bit of Nginx config
 
-        root /var/wordtracker/apps/linkbuilder/current/public;
-        access_log /var/log/nginx/linkbuilder.access.log main;
+        root /var/wordtracker/apps/my-app/current/public;
+        access_log /var/log/nginx/my-app.access.log main;
 
         location / {
           try_files $uri @unicorn;
