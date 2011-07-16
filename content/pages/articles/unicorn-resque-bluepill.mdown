@@ -1,0 +1,112 @@
+read more: Read More
+date: 16 Jul 2011
+summary: Our users at Wordtracker search for keywords and linking domains many thousands of times each day. We run the majority of these searches as "background jobs" to maintain a good user experience. We'd developed an in-house system written in Ruby and Sinatra for running these jobs, but the robustness and error reporting wasn't as good as we wanted. I decided to take a look at the [Redis](http://github.com/antirez/redis) backed [Resque](http://github.com/defunkt/resque) (pron. res-queue |ˈreskyoō|) to see whether it would work well for us.
+categories: agile-software-development, ruby-and-jruby
+
+# Serving Rails apps with Unicorn and Bluepill. Includes Resque.
+
+At Wordtracker we run four Rails apps in production. Two of those use background jobs with a [Resque](https://github.com/defunkt/resque) implementation. We've recently switched to serving them using [Unicorn](http://unicorn.bogomips.org), with [Nginx](http://nginx.net) as a proxy. We've found the restart times on deployment to be far quicker and more graceful, which gives us confidence to roll out new features to our customers as soon as they become available.
+
+I hope the following configuration snippets might be helpful for anyone wanting to serve their Rails applications using Unicorn.
+
+For the record, we're currently on Rails 3.0.7 with Ruby 1.9.2.
+
+## Here's the Unicorn config
+
+The forking blocks feel like code, rather than configuration, but they are extremely important if you're running with multiple worker processes:
+
+        pid_path = "tmp/pids/unicorn.pid"
+        listen "*:8031"
+        worker_processes 8
+        timeout 30
+        preload_app true
+        pid pid_path
+        stderr_path "log/unicorn-err.log"
+        stdout_path "log/unicorn-out.log"
+
+        before_fork do |server, worker|
+          ActiveRecord::Base.connection.disconnect!
+          old_pid_path = "#{pid_path}.oldbin"
+          if File.exists?(old_pid_path) && server.pid != old_pid_path
+            begin
+              Process.kill("QUIT", File.read(old_pid_path).to_i)
+            rescue Errno::ENOENT, Errno::ESRCH
+              # someone else did our job for us
+            end
+          end
+        end
+
+        after_fork do |server, worker|
+          ActiveRecord::Base.establish_connection
+          rails_env = ENV['RAILS_ENV'] || 'production'
+          worker.user('app', 'app') if Process.euid == 0 && rails_env == 'production'
+        end
+
+## We need to monitor our apps together with their Resque background jobs. We're using [Bluepill](https://github.com/arya/bluepill) for that:
+
+        app_name = 'my-app'
+        worker_queues = ['my-app'] * 4
+        
+        rails_env = 'production'
+        user = 'app'
+        group = 'app'
+        rails_root = "/var/apps/my-app/current"
+        ENV['PATH'] = "/opt/ruby192/bin:#{ENV['PATH']}"
+
+        Bluepill.application(app_name) do |app|
+
+          app.working_dir = rails_root
+          app.uid = user
+          app.gid = group
+
+          app.process("unicorn") do |process|
+            process.pid_file = "#{rails_root}/tmp/pids/unicorn.pid"
+            process.stdout = process.stderr = "#{rails_root}/log/bluepill.log"
+            process.environment = { 'RAILS_ENV' => rails_env }
+
+            # Unicorn needs to be invoked using a path which includes 'current', 
+            # otherwise it tries to restart with the executable installed in an old release dir (which get cleaned)
+            process.start_command = "bundle exec #{rails_root}/vendor/bundle/ruby/1.9.1/bin/unicorn -Dc unicorn.rb"
+            process.stop_command = "kill -QUIT {{PID}}"
+            process.restart_command = "kill -USR2 {{PID}}"
+
+            process.start_grace_time = 30.seconds
+            process.stop_grace_time = 5.seconds
+            process.restart_grace_time = 13.seconds
+          end
+
+          if defined?(worker_queues)
+            worker_queues.each_with_index do |queue_list, i|
+              app.process("resque-#{i}") do |process|
+                process.group = "resque"
+
+                process.pid_file = "#{rails_root}/tmp/pids/resque-#{i}.pid"
+                process.stdout = process.stderr = "#{rails_root}/log/resque-#{i}.log"
+                process.environment = {
+                  'RAILS_ENV' => rails_env, 
+                  'QUEUE' => queue_list
+                }
+                process.start_command = "bundle exec rake resque:work"
+                process.stop_command = "kill -QUIT {{PID}}"
+                process.daemonize = true
+              end
+            end
+          end
+        end
+        
+## Finally, a bit of Nginx config
+
+        root /var/wordtracker/apps/linkbuilder/current/public;
+        access_log /var/log/nginx/linkbuilder.access.log main;
+
+        location / {
+          try_files $uri @unicorn;
+          access_log off;
+          expires 30d;
+        }
+        location @unicorn {
+          proxy_pass http://localhost:8031;
+          error_log /var/log/nginx/my-app.error.log warn;
+          include /etc/nginx/nginx-proxy.conf;
+          proxy_set_header X-Forwarded-Proto https;
+        }
