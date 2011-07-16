@@ -1,6 +1,6 @@
 read more: Read More
 date: 16 Jul 2011
-summary: Our users at Wordtracker search for keywords and linking domains many thousands of times each day. We run the majority of these searches as "background jobs" to maintain a good user experience. We'd developed an in-house system written in Ruby and Sinatra for running these jobs, but the robustness and error reporting wasn't as good as we wanted. I decided to take a look at the [Redis](http://github.com/antirez/redis) backed [Resque](http://github.com/defunkt/resque) (pron. res-queue |ˈreskyoō|) to see whether it would work well for us.
+summary: At Wordtracker we run four Rails apps in production. Two of those use background jobs with a [Resque](https://github.com/defunkt/resque) implementation. We've recently switched to serving them using [Unicorn](http://unicorn.bogomips.org), with [Nginx](http://nginx.net) as a proxy. We've found the restart times on deployment to be far quicker and more graceful, which gives us confidence to roll out new features to our customers as soon as they become available.
 categories: agile-software-development, ruby-and-jruby
 
 # Serving Rails apps with Unicorn and Bluepill. Includes Resque.
