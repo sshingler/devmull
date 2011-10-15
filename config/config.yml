@@ -24,7 +24,8 @@ author:
 
 disqus_short_name: devmull
 
-#theme: penguinclassics
+theme: penguinclassics
+
 # The remaining configuration settings are set separately in development
 # (i.e. when running on your local workstation) and production (when running
 # on your live server).
