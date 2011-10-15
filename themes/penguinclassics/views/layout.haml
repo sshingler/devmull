@@ -20,11 +20,11 @@
           %span
             =@heading
             %em= no_widow @subtitle
+      = haml :categories, :layout => false
     = yield
     
     #footer
       .wrapper
-        = haml :categories, :layout => false
         %br
         = haml :feed, :layout => false
       
