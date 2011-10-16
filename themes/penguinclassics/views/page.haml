@@ -10,3 +10,4 @@
             %header
               %h1= articles_heading
             = article_summaries(@page.articles)
+    = haml :comments, :layout => false
