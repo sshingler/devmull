@@ -100,8 +100,6 @@ h1, h2, h3, h4, h5, .post.quote blockquote, .permalink p, .source, #footer
       &:hover
         color: #fff
         text-shadow: #555 0 1px 1px
-      
-
 
 .post
   background: #d4d4cb url(http://data.tumblr.com/Ko3LqKPvh62hchwniINBY4Mr_400.jpg) top repeat-x
@@ -111,8 +109,23 @@ h1, h2, h3, h4, h5, .post.quote blockquote, .permalink p, .source, #footer
     margin: 0 auto
     padding: 1.2em 15px
     width: 510px
-
+    h1
+      color: #bc3d0e
+      text-decoration: none
+    
+    h2
+      color: #bc3d0e
+      text-decoration: none
+      a
+        border-bottom: 1px #c8c8ad solid
+        color: #bc3d0e
+        text-decoration: none
+    h3
+      padding-top: 1em
+    
     li
+      padding: 0.2em
+    .articles li
       padding: 1.2em 15px 2em 15px
       border-bottom: 1px #d0cdce solid
       
@@ -125,6 +138,8 @@ h1, h2, h3, h4, h5, .post.quote blockquote, .permalink p, .source, #footer
         padding-top: 1em
       p.meta
         font-size: 0.8em
+    img
+      margin: 1em
 
   .permalink
     background: #92300d url(http://data.tumblr.com/Ko3LqKPvh62htiqhpwkcr0nD_400.jpg)
@@ -269,11 +284,12 @@ pre
   margin: 1.5em 0
   border-left: 3px "solid" #c8c8ad
   background: #d4d4cb
-  padding: 1em
-  font-size: 90%
+  padding: 0.5em
+  font-size: 70%
   line-height: 135%  
   overflow: auto
 
 code
+  font-family: Courier, "Courier New", Helvetica
   border: none
   padding: 0

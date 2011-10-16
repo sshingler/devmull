@@ -2,7 +2,6 @@
   .content
     - @page.pages.each do |page|
       = haml :summary, :layout => false, :locals => { :article => page, :heading => :h3 }
-
     .wrapper
       .description
         ~ @page.to_html(self)

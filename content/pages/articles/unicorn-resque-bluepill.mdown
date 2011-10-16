@@ -11,8 +11,6 @@ I hope the following configuration snippets might be helpful for anyone wanting 
 
 For the record, we're currently on Rails 3.0.7 with Ruby 1.9.2.
 
-## Here's the Unicorn config
-
 The forking blocks feel like code, rather than configuration, but they are extremely important if you're running with multiple worker processes:
 
         pid_path = "tmp/pids/unicorn.pid"
@@ -42,7 +40,7 @@ The forking blocks feel like code, rather than configuration, but they are extre
           worker.user('app', 'app') if Process.euid == 0 && rails_env == 'production'
         end
 
-## We need to monitor our apps together with their Resque background jobs. We're using [Bluepill](https://github.com/arya/bluepill) for that:
+We need to monitor our apps together with their Resque background jobs. We're using [Bluepill](https://github.com/arya/bluepill) for that:
 
         app_name = 'my-app'
         worker_queues = ['my-app'] * 4
@@ -94,7 +92,7 @@ The forking blocks feel like code, rather than configuration, but they are extre
           end
         end
         
-## Finally, a bit of Nginx config
+Finally, a bit of Nginx config
 
         root /var/wordtracker/apps/my-app/current/public;
         access_log /var/log/nginx/my-app.access.log main;
