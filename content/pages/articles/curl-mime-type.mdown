@@ -1,7 +1,7 @@
 read more: Read More
 date: 2009-08-01T14:47:00.000+01:00
 summary: Using curl with the -I flag retrieves just the header information - handy for detecting the MIME type of a URL.
-categories:
+categories: misc
 
 # Using curl -I to detect the MIME type of a URL
 

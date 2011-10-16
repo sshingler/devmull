@@ -6,7 +6,7 @@
 
 [JRuby](http://www.jruby.org) is an implementation of the Ruby programming language atop the Java Virtual Machine (JVM). 
 
-I'e been working with Ruby since 2004. Our team at Wordtracker uses Ruby and Ruby on Rails to produce (almost) all of our work.
+I've been working with Ruby since 2004. Our team at Wordtracker uses Ruby and Ruby on Rails to produce (almost) all of our work.
 I've used JRuby as a convenient way to deploy work in a Java-centric environment, and to leverage the huge number of existing Java libraries whilst enjoying writing in Ruby.
 
 I'm very happy that one of my [posts]("articles/using-jruby-for-soap") has been published as a chapter in the [JRuby Cookbook](http://oreilly.com/catalog/9780596519650) by O'Reilly.

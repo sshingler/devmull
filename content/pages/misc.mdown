@@ -1,0 +1,5 @@
+
+
+# Misc
+
+Some posts aren't really in the Ruby or Agile category. They are just little random posts on odd bits of tech.
