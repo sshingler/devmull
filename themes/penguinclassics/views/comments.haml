@@ -1,15 +1,16 @@
+%script{:type=>"text/javascript"}
+  (function() {
+  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+  po.src = 'https://apis.google.com/js/plusone.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
 .post
   .content
     .wrapper
       .social
-        - url = @page.nil? ? base_url : url_for(@page)
-        - heading = @page.nil? ? @heading : @page.heading
-        %a{ :href => "http://delicious.com/post?url=#{url}&title=#{heading}", :title => "Bookmark on delicious.com" }
-          %img{ :src => "/penguinclassics/images/delicious.png", :alt => "Bookmark on delicous.com" }
-        %a{ :href => "http://digg.com/submit?phase=2&url=#{url}&title=#{heading}", :title => "Digg it!" }
-          %img{ :src => "/penguinclassics/images/digg.png", :alt => "Digg it!" }
-        %a{ :href => "http://reddit.com/submit?url=#{url}&title=#{heading}", :title => "Reddit!" }
-          %img{ :src => "/penguinclassics/images/reddit.gif", :alt => "Reddit!" }
+        %script{:type=>"text/javascript", :src => "http://tweetmeme.com/i/scripts/button.js"}
+        %g:plusone{:annotation => "inline"}
       - if short_name = Nesta::Config.disqus_short_name
         #disqus_thread
           - if Sinatra::Application.environment == :development
