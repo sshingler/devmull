@@ -1,6 +1,6 @@
 read more: Read More
 date: 16 Jul 2011
-summary: something about it
+summary: Awareness of a new API in a business often comes from developers, rather than from the marketing or commercial side of the business. This grass roots traction is an important aspect of an API only business. If developers are becoming customers in that way, there must be a developer sales funnel.
 categories: misc
 
 # The Developer Sales Funnel
@@ -43,5 +43,3 @@ So, once a developer has tried your API and found it easy to use and useful for 
 
 
 \* _Footnote: DELETE is not a GET request._
-
-Although the Guardian's API development has been commercially unsuccessful so far, the benefits in terms of developer engagement internally, and productivity as a result has more than outweighed the losses.
