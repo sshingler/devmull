@@ -1,0 +1,47 @@
+read more: Read More
+date: 16 Jul 2011
+summary: something about it
+categories: misc
+
+# The Developer Sales Funnel
+
+Yesterday, I attended Mashery's [Business API Conference](http://apiconference.com) which focussed on the evolving nature of APIs and how businesses use them.
+
+Businesses like Twilio, Datasift and Qwerly use their website purely as a lead generation tool. The API is the revenue generator. Twilio CEO [Jeff Lawson](http://www.twilio.com/company) made some great points about the connection between developers as consumers of APIs and what developers are looking for in an API.
+
+Awareness of a new API in a business often comes from developers, rather than from the marketing or commercial side of the business. This grass roots traction is an important aspect of an API only business. If developers are becoming customers in that way, there must be a developer sales funnel.
+
+The traditional sales funnel looks like this:
+
+    Marketing => Visitor => Signup => Pay
+
+It is a model to track the progression of people engaging with your business from their first contact, to finally becoming a customer. It is a funnel because you have less people engaging with each step. (Utopia would be a sales cylinder.) Once you've got someone to the bottom of the funnel, attention changes to retaining them as a customer. That's the holy grail of the subscription business model - but customer retention is a whole other subject.
+
+A funnel where developers are the customers has the same headline points as the tradition sales funnel, but the details behind each step are both interesting and subtle. We have to take into account here that developers are usually smart people, perhaps with a touch of cynicism, and are highly sensitive to marketing material.
+
+### Marketing
+
+A developer will hear about a new API from grass roots sources, rather than from a sales email, phone call or glossy brochure. Typically, that will be from another developer, perhaps at a Hacker News [meetup](http://www.meetup.com/HNLondon/), or from an online source like 
+Stack Overflow or [r/programming](http://www.reddit.com/r/programming). Typically, you'll hear about the same new hotness a few times from different sources before it hits enough of a threshold in your brain to prompt you to properly check it out.
+
+### Visitor Engagement
+
+Once the developer has gone to your website, they'll want to know two things:
+
+    * Can I try it out easily?
+    * What does your API look like? 
+
+A developer doesn't want a sales person to reach out to them to learn more about their API needs and budget. They want to know whether it is a RESTful API, whether it uses http properly\* and whether they can sign up and get a token easily - just to try it out. So, a clear signup form is important. Good documentation is the channel the developer requires to learn how to actually use the API. Putting effort into clearly written, up to date documentation is well worth it (and unfortunately something many API providers currently fail on) because it is such a key point of decision making for a developer at the start of their engagement with your business.
+
+### Trial
+
+Appealing to developers with modern API interfaces such as JSON over RESTful http calls, rather than hugely verbose SOAP/XML calls will help early adoption. That's because the developer has to write less code to start getting results from the API. Current trends are towards using [WebSockets](http://devmull.net/articles/a-ruby-client-for-datasift) which give you bi-directional persistent streaming - great for receiving messages over a long period of time.
+
+### Pay
+
+So, once a developer has tried your API and found it easy to use and useful for their needs - the next stage for them is to start paying for their calls. Perhaps that event happens at the end of a trial period, or after their initial credits have been used. At this point the developer is likely to have to make a case to their business representative about the benefits of the API. A clear pricing model, published openly on your website will aid this part of the sales funnel. Again, requiring a developer to speak to a sales representative presents more of a barrier than an enticement to adoption.
+
+
+\* _Footnote: DELETE is not a GET request._
+
+Although the Guardian's API development has been commercially unsuccessful so far, the benefits in terms of developer engagement internally, and productivity as a result has more than outweighed the losses.
