@@ -1,7 +1,7 @@
 read more: Read More
 date: 2010-05-12T10:24:00.000+01:00
 summary: A couple of days ago I attended an Unconfernce called Leancamp. My main reason for going was that David Heinemeier Hansson - the creator of RubyOnRails and co-author of Getting Real and Rework was speaking.
-categories: agile-software-development
+categories: agile-software-development, archives
 
 #A review of Leancamp
 

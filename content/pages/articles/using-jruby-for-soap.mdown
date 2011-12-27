@@ -1,7 +1,7 @@
 read more: Read More
 date: 2008-02-28T16:28:00.001Z
 summary: I have been working on a project which uses the Mule ESB, and  a JRubyOnRails app. Part of this means calling SOAP services from within the JRuby app. Ola Bini sets out a couple of approaches in his JRuby on Rails book,but I thought I would blog the success I've had using the mule-client libraries. I am passing "complex" Java objects around in these SOAP services, not just primitives - always more difficult when it comes to SOAP interoperability.
-categories: ruby-and-jruby, agile-software-development
+categories: ruby-and-jruby, agile-software-development, archives
 
 # Calling SOAP Services from JRuby
 

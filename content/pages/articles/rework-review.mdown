@@ -1,7 +1,7 @@
 read more: Read More
 date: 2010-04-12T11:44:00.000+01:00
 summary: [Rework](http://37signals.com/rework) is largely a rehash of Getting Real, but with the focus moved away from people who write software, onto people involved in all aspects of running a business. The refocussing allows Fried and DHH to reach a far wider audience with their opinions. Their wisdom, gained by experience, of how to deliver software will be read by people who would have never considered reading Getting Real. That's pretty savvy market positioning and something that wouldn't have been achieved by a series of blog posts on their website.
-categories: agile-software-development
+categories: agile-software-development, archives
 
 #A review of Rework.
 

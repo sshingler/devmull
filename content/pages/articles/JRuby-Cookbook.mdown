@@ -1,7 +1,7 @@
 read more: Read More
 date: 2008-12-15T12:45:00.004Z
 summary: I'm very happy that my contribution to the O'Reilly JRuby Cookbook has been accepted. It is only a little bit on making SOAP calls from Ruby (JRuby) using the Mule ESB Client library, but it is still really nice to see my name inside a book.
-categories: ruby-and-jruby, agile-software-development
+categories: ruby-and-jruby, agile-software-development, archives
 
 # JRuby Cookbook published
 

@@ -1,7 +1,7 @@
 read more: Read More
 date: 2009-03-05T10:30:00.001+01:00
 summary: Avoiding Java heap space errors in the JVM with Maven and MAVEN_OPTS.
-categories: misc
+categories: misc, archives
 
 # Customising the JVM memory allocation using MAVEN_OPTS
 

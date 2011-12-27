@@ -1,7 +1,7 @@
 read more: Read More
 date: 2009-12-01T22:30:00.001+01:00
 summary: I have been searching for some time for a simple rack based authentication system. A key requirement for me is that I'd like it to work with the data storage mechanism of my choice - MongoMapper. I spotted a project on github called Chowder, which worked really nicely...
-categories: ruby-and-jruby
+categories: ruby-and-jruby, archives
 
 # Using Chowder for Simple Rack-based authentication
 

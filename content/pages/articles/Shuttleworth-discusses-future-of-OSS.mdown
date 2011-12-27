@@ -1,7 +1,7 @@
 read more: Read More
 date: 2007-09-04T18:00:00.000+01:00
 summary: This is a reprint of an article I wrote for Ping Wales (now sadly closed) back in July 2006 covering Mark Shuttleworth's keynote speech at ApacheCon. \n\n Despite being on record as disliking public speaking, Mark Shuttleworth was in Dublin last month to give the keynote speech at this year's ApacheCon Europe. \n\n His theme was the future direction of open source software (OSS), and the issues developers should focus on to ensure the OSS movement's continued success.In true cosmonaut style, Shuttleworth's ApacheCon Europe presentation took the form of a countdown of the issues facing OSS developers.
-categories: agile-software-development
+categories: agile-software-development, archives
 
 # Shuttleworth discusses future of OSS
 

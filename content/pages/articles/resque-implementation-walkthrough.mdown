@@ -1,7 +1,7 @@
 read more: Read More
 date: 3 Nov 2010
 summary: Our users at Wordtracker search for keywords and linking domains many thousands of times each day. We run the majority of these searches as "background jobs" to maintain a good user experience. We'd developed an in-house system written in Ruby and Sinatra for running these jobs, but the robustness and error reporting wasn't as good as we wanted. I decided to take a look at the [Redis](http://github.com/antirez/redis) backed [Resque](http://github.com/defunkt/resque) (pron. res-queue |ˈreskyoō|) to see whether it would work well for us.
-categories: agile-software-development, ruby-and-jruby
+categories: agile-software-development, ruby-and-jruby, archives
 
 # Running background jobs with Resque
 

@@ -1,7 +1,7 @@
 read more: Read More
 date: 2009-10-28T10:30:00.001+01:00
 summary: A useful bit of command line foo, for getting useful information out of git log.
-categories: misc
+categories: misc, archives
 
 # Getting useful information out of git log
 

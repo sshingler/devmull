@@ -1,7 +1,7 @@
 read more: Read More
 date: 2010-02-27T14:34:00.001Z
 summary: I was lucky enough to be a beta-tester for MongoHQ, the hosted MongoDB service. Yesterday (20100226) they came out of private beta, and launched their  pricing options to the world. The results, as MongoMapper author John Nunemaker tweeted, were surprising...
-categories: agile-software-development
+categories: agile-software-development, archives
 
 # Thoughts on MongoHQ pricing
 

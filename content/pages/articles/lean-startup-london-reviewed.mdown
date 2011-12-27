@@ -1,7 +1,7 @@
 read more: Read More
 date: 2010-10-25T10:24:00.000+01:00
 summary: A couple of weeks ago, I attended a @TechHubFriday event: Eric Ries on The Lean Startup. Eric began with an interesting definition of a startup company: "A startup is a human institution designed to deliver a new product or service under conditions of extreme uncertainty." It has nothing to do with company size or industry sector. Interestingly, this differs from the "two guys in a garage" model, which is probably the mainstream media's impression of a startup.
-categories: agile-software-development
+categories: agile-software-development, archives
 
 #Lean Startup London reviewed
 

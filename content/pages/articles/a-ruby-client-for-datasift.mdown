@@ -1,7 +1,7 @@
 read more: Read More about Rsift
 date: 01 Jan 2011
 summary: [DataSift](http://datasift.net) is a "real time social media filtering engine". They have recently published an  [API](http://support.datasift.net/help/kb/rest-api/api-documentation) which allows developers to create and manage "streams". The domain of social media curation is very hot right now, so I was very interested to receive a alpha API key to try it out. I work mainly with Ruby, and there wasn't a client out there yet to "wrap" the Datasift API in Ruby, so I thought that writing that gem would be my first step.
-categories: agile-software-development, ruby-and-jruby
+categories: agile-software-development, ruby-and-jruby, archives
 
 # Rsift - A Ruby client for Datasift
 

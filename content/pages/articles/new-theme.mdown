@@ -1,7 +1,7 @@
 read more: Read More
 date: 2010-04-03T22:30:00.001+01:00
 summary: Nesta CMS has recently introduced theme support, and I had recently spotted the penguin classics theme on tumblr. I thought I'd convert it.
-categories: misc
+categories: misc, archives
 
 # A quick post on a new theme
 

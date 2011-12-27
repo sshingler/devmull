@@ -1,7 +1,7 @@
 read more: Read More
 date: 21 Nov 2010
 summary: One of the key principles in Lean Startup is the Pivot. It has actually become a bit of a buzzword over the past year. The term comes from basketball - keep one foot planted but change direction with the other. The metaphor for business is that you stay grounded in what you've learned whilst testing something new. For example, you might have been offering a monthly subscription product: you could pivot to offering an annual subscription instead, or as well as the monthly. As I've been reading about Pivots, I realised I had met the pattern before in a quite different context.
-categories: agile-software-development
+categories: agile-software-development, archives
 
 # The Pivot as Prepare, Execute, Listen
 

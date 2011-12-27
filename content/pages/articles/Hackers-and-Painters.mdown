@@ -1,7 +1,7 @@
 read more: Read More
 date: 2007-09-04T17:44:00.000+01:00
 summary: There are plenty of coders in the world and in the mid 1990s, not a few of them tried their hands at creating a technology start-up company. The majority of those start-ups failed in due course - but one of them succeeded, and in doing so, became a part of dotcom legend. In 1998, Yahoo! paid $49 million for Viaweb Inc., a company whose market-leading Viaweb Store software and reporting tools powered the majority of all e-commerce sites then in existence. Not only is Viaweb Store thought to be the world's first web-based application, it was written using Lisp - one of the oldest programming languages still in relatively wide use.
-categories: agile-software-development
+categories: agile-software-development, archives
 
 # Hacker and Painters
 

@@ -1,7 +1,7 @@
 read more: Read More...
 date: 23 April 2011
 summary: We've got used to free software. Either we expect it to be free, or (as with Facebook and Gmail) we're happy to use our personal data as currency. There's a ton of interesting thinking already on the web on the psychological shift that's happened in SAAS (Software as a Service) over the past, say, 5 years, but that isn't really my area - I'm much more interested in building software which people are happy to pay for. I thought it would be interesting to go through a very simple model of financing a new software service from conception to 12 months after launch.
-categories: agile-software-development
+categories: agile-software-development, archives
 
 # It's hard to get people to pay for software
 

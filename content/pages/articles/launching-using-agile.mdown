@@ -1,7 +1,7 @@
 read more: Read More
 date: 2010-09-28T10:24:00.000+01:00
 summary: We've just used agile methodologies to launch a new product, [Link Builder](http://www.wordtracker.com/linkbuilder) at [Wordtracker](http://www.wordtracker.com). We had to build the app and get to market quickly. That meant defining a 'viable product' and launching with fewer features than we would ideally have liked. It would prove to be crucial to gain traction and avoid falling behind our competitors. Agile Methodologies give us some structure and methods to help connect software development to business.  I'd like to cover the three aspects which have been important to us in launching Link Builder...
-categories: agile-software-development
+categories: agile-software-development, archives
 
 #Launching using Agile.
 
