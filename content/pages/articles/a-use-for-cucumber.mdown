@@ -1,0 +1,33 @@
+read more: Read More...
+date: 24 March 2012
+summary: I first came across [Cucumber](http://cukes.info/) at the 2007 QCon conference in London. Aslak Hellesoy gave a really great talk where he took suggestions for an app, and built it live in a 1-hour session in front of everyone there using Cucumber to drive the features - BDD style.
+
+categories: agile-software-development
+
+# A use for cucumber
+
+I first came across [Cucumber](http://cukes.info/) at the 2007 QCon conference in London. Aslak Hellesoy gave a really great talk where he took suggestions for an app, and built it live in a 1-hour session in front of everyone there using Cucumber to drive the features - BDD style.
+
+My immediate reaction can basically be summed up as:
+
+    OMG This is awesome. We'll be able to really engage the product guy in writing stories as feature files! It'll be so easy for him! Just write in plain English and, well, Job Done.
+    
+I went back to my team, hugely enthusiastic about the potential of the project.
+
+That lasted about an hour.
+
+Turns out that it isn't plain English. To a developer it looks pretty close, but to an actual normal human you might as well ask them to write code. They have to deal with indenting, for one thing. Also, a big thing with product guys is that they like to mock up visuals on how the thing should look. 
+
+So, we just battled on, writing feature files; getting lost in badly organised step definitions. In the end, we did what many teams have done. We went back to Test::Unit and the Product guy did stuff on a whiteboard.
+
+    Ultimately, the feature files were only ever read by a developer and they served solely to add a layer of useless abstraction over the actual tests.
+
+Fast forward a few months, and we're trying to use Capybara to do some high level integration tests. The whole Capybara/Selenium stack is pretty good testing non-javascript pages, but in trying to get it to drive our Javascript-heavy app we ended up spending more time handling flakiness in our tests than actually providing value.
+
+Now, I've changed companies and moved onto a much larger engineering team. Large enough to warrant having a dedicated automated testing team in-house. There are a couple of interesting things about this. Firstly, having a dedicated resource to handle high-level integration tests sounds like a very good idea because it frees up developers to focus on development and provides a middle ground between Product and Development to ensure someone is always considering the user flow.
+
+Secondly, and more interestingly in the context of this post: These guys are using Cucumber (and Capybara), but they're using it for themselves. I asked them why they did this: Don't you feel it is just a useless layer of abstraction?
+
+    It helps us get in the mindset of a user.
+
+Now, that seems to me like reason enough. :)
