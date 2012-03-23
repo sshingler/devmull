@@ -1,5 +1,5 @@
 read more: Read More...
-date: 24 March 2012
+date: 23 March 2012
 summary: I first came across [Cucumber](http://cukes.info/) at the 2007 QCon conference in London. Aslak Hellesoy gave a really great talk where he took suggestions for an app, and built it live in a 1-hour session in front of everyone there using Cucumber to drive the features - BDD style.
 
 categories: agile-software-development
