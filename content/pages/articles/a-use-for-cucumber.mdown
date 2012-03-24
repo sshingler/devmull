@@ -2,7 +2,7 @@ read more: Read More...
 date: 23 March 2012
 summary: I first came across [Cucumber](http://cukes.info/) at the 2007 QCon conference in London. Aslak Hellesoy gave a really great talk where he took suggestions for an app, and built it live in a 1-hour session in front of everyone there using Cucumber to drive the features - BDD style.
 
-categories: agile-software-development
+categories: agile-software-development, archives
 
 # A use for cucumber
 
@@ -21,7 +21,7 @@ I went back to my team, hugely enthusiastic about the potential of the project.
 
 That lasted about an hour.
 
-Turns out that it isn't plain English. To a developer it looks pretty close, but to an actual normal human you might as well ask them to write code. They have to deal with indenting, for one thing. Also, a big thing with product guys is that they like to mock up visuals on how the thing should look. 
+Turns out that it isn't plain English. To a developer it looks pretty close, but to a normal human you might as well be asking them to write actual code. They have to deal with indenting, for one thing. Also, a big thing with product guys is that they like to mock up visuals on how the thing should look. 
 
 So, we just battled on, writing feature files; getting lost in badly organised step definitions. In the end, we did what many teams have done. We went back to Test::Unit and the Product guy did stuff on a whiteboard.
 
@@ -36,6 +36,8 @@ Now, I've changed companies and moved onto a much larger engineering team. Large
 
 Secondly, and more interestingly in the context of this post: These guys are using Cucumber (and Capybara), but they're using it for themselves. I asked them why they did this: Don't you feel it is just a useless layer of abstraction?
 
+Here's the answer:
+
     It helps us get in the mindset of a user.
 
-Now, that seems to me like reason enough. :)
+Now, that seems to me to be reason enough. :)
