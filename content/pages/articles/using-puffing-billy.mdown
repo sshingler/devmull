@@ -1,0 +1,41 @@
+read more: Read More...
+date: 12 October 2012
+summary: Puffing Billy gives you the ability to stub out remote sites in your request (integration) specs, in the same way that you'd use Webmock or Artifice in your unit/controller specs. I thought I'd throw a little non-rails spec together to check it out.
+
+# Checking out Puffing Billy
+
+Puffing Billy gives you the ability to stub out remote sites in your request (integration) specs, in the same way that you'd use Webmock or Artifice in your unit/controller specs.
+
+I thought I'd throw a little non-rails spec together to check it out. First, some gems:
+
+    gem 'puffing-billy', :require => 'billy'
+    gem 'rspec'
+    gem 'capybara'
+    gem 'selenium-webdriver'
+    
+Some config:
+
+    require 'rspec'
+    require 'capybara'
+    require 'capybara/dsl'
+    require 'capybara/rspec'
+    require 'selenium/webdriver'
+    require 'billy/rspec'
+
+    Capybara.javascript_driver = :selenium_billy
+    
+A spec:
+
+    require 'spec_helper'
+
+    describe 'Going out to Facebook, and ting', :js => true, :type => :request do
+
+      it "should not hit Facebook" do
+        proxy.stub('http://www.facebook.com/').and_return(:text => 'Foobar')
+
+        visit 'http://www.facebook.com/'
+        page.should have_content "Foobar"
+      end
+    end
+    
+Simple, and very cool. Should make those request specs run a lot faster...
