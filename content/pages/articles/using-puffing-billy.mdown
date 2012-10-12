@@ -1,6 +1,7 @@
 read more: Read More...
 date: 12 October 2012
 summary: Puffing Billy gives you the ability to stub out remote sites in your request (integration) specs, in the same way that you'd use Webmock or Artifice in your unit/controller specs. I thought I'd throw a little non-rails spec together to check it out.
+categories: agile-software-development, ruby-and-jruby, archives
 
 # Checking out Puffing Billy
 
