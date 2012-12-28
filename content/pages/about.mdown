@@ -2,12 +2,10 @@
 
 # About
 
-Hi, I'm Steven. I write about agile software development and Ruby. I'm interested in connecting the disciplines of making and selling software - two often disparate and contradictory businesses.  Agile is basically a set of techniques for bridging that gap. 
+Hi, I'm Steven. I write here in a completely personal capacity about agile software development and Ruby. I'm interested in connecting the disciplines of making and selling software - two often disparate and contradictory businesses.  Agile is basically a set of techniques for bridging that gap.
 
 Before going into software, I studied double bass performance at the Royal Academy of Music. After graduating in 1996, I spent four years performing worldwide with various orchestras, including the Philharmonia, the London Symphony, the Royal Philharmonic and the Halle. I also played at the Salzburg Festival and recorded for Deutsche Grammophon and Phillips at Abbey Road studios in London.
 
-In 2000 I started looking for employment as a coder. Coding had been a schoolboy hobby and I'd been running a computer lab at the Academy. I got a job with Ogilvy Interactive, a large digital marketing agency, where I learnt a huge amount, from Javascript to administering Apache. 
-
-The full path from there to my present job at Google is on my [Linkedin profile](http://uk.linkedin.com/in/sshingler).
+In 2000 I started looking for employment as a developer. Coding had been a schoolboy hobby and I'd been running a computer lab at the Academy. I was lucky enough to get a job with Ogilvy Interactive, a large digital marketing agency, where I learnt a huge amount. The full path from there to my present job at Google is on my [Linkedin profile](http://uk.linkedin.com/in/sshingler).
 
 I tweet (usually off-topic) at [@sshingler](http://twitter.com/sshingler) and I take pictures and upload them on my [flickr stream](http://flickr.com/photos/sshingler).
