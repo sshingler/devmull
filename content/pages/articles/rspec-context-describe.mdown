@@ -1,11 +1,11 @@
 read more: Read More...
 date: 16 December 2012
-summary: I've never been super-clear on how to use context and describe in Rspec. A colleague just clarified it really nicely for me. Context is an English version of what the setup is for that group of specs. The nouns around your specs. Describe is for the verbs (methods) and/or the nouns (objects) which you are testing.
+summary: I've never been super-clear on how to use context and describe in Rspec. A colleague recently clarified it really nicely for me. Context is an English version of what the setup is for that group of specs. The nouns around your specs. Describe is for the verbs (methods) and/or the nouns (objects) which you are testing.
 categories: ruby-and-jruby, archives
 
 # How to use context and describe in Rspec
 
-I've never been super-clear on how to use context and describe in Rspec. A colleague just clarified it really nicely for me:
+I've never been super-clear on how to use context and describe in Rspec. A colleague recently clarified it really nicely for me:
 
 Context is an English version of what the setup is for that group of specs. The nouns around your specs.
 
